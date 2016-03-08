@@ -1,0 +1,87 @@
+// ******************************************************************************
+// * This is an automatically generated file containing the ribbon resource for *
+// * your application.                                                          *
+// ******************************************************************************
+
+#include ".\ribbon.h"
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_TAB_HOME_LabelTitle_RESID L"Home" /* LabelTitle IDC_CMD_TAB_HOME_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupExpression_LabelTitle_RESID L"Expression" /* LabelTitle cmdGroupExpression_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupGrid_LabelTitle_RESID L"Grid" /* LabelTitle cmdGroupGrid_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupAxis_LabelTitle_RESID L"Axis" /* LabelTitle cmdGroupAxis_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    cmdGroupCanvas_LabelTitle_RESID L"Canvas" /* LabelTitle cmdGroupCanvas_LabelTitle_RESID: (null) */
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_CMD_ADD_EXPRESSION_LabelTitle_RESID L"Add" /* LabelTitle IDC_CMD_ADD_EXPRESSION_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_ADD_EXPRESSION_LargeImages_RESID    BITMAP    "res\\cmdButtonAddExpressionL.bmp" /* LargeImages IDC_CMD_ADD_EXPRESSION_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_EDIT_EXPRESSION_LabelTitle_RESID L"Edit" /* LabelTitle IDC_CMD_EDIT_EXPRESSION_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_EDIT_EXPRESSION_SmallImages_RESID    BITMAP    "res\\cmdButtonEditExpressionS.bmp" /* SmallImages IDC_CMD_EDIT_EXPRESSION_SmallImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_REMOVE_EXPRESSION_LabelTitle_RESID L"Remove" /* LabelTitle IDC_CMD_REMOVE_EXPRESSION_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_REMOVE_EXPRESSION_SmallImages_RESID    BITMAP    "res\\cmdButtonRemoveExpresionS.bmp" /* SmallImages IDC_CMD_REMOVE_EXPRESSION_SmallImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_SET_EXPRESSION_COLOR_LabelTitle_RESID L"Color" /* LabelTitle IDC_CMD_SET_EXPRESSION_COLOR_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_SET_EXPRESSION_COLOR_LargeImages_RESID    BITMAP    "res\\cmdButtonSetExpressionColorL.bmp" /* LargeImages IDC_CMD_SET_EXPRESSION_COLOR_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_SHOW_GRID_LabelTitle_RESID L"Enabled" /* LabelTitle IDC_CMD_SHOW_GRID_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_GRID_SPACING_SmallImages_RESID    BITMAP    "res\\cmdSpinnerGridSpacingS.bmp" /* SmallImages IDC_CMD_GRID_SPACING_SmallImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_SHOW_AXIS_LabelTitle_RESID L"Enabled" /* LabelTitle IDC_CMD_SHOW_AXIS_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_TICK_SPACING_SmallImages_RESID    BITMAP    "res\\cmdSpinnerTickSpacingS.bmp" /* SmallImages IDC_CMD_TICK_SPACING_SmallImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_SET_BACKGROUND_COLOR_LabelTitle_RESID L"Background" /* LabelTitle IDC_CMD_SET_BACKGROUND_COLOR_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_SET_BACKGROUND_COLOR_LargeImages_RESID    BITMAP    "res\\cmdButtonSetExpressionColorL.bmp" /* LargeImages IDC_CMD_SET_BACKGROUND_COLOR_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_EXPORT_LabelTitle_RESID L"Export to image" /* LabelTitle IDC_CMD_EXPORT_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_EXPORT_LargeImages_RESID    BITMAP    "res\\cmdButtonExportL.bmp" /* LargeImages IDC_CMD_EXPORT_LargeImages_RESID: (null) */
+STRINGTABLE 
+BEGIN
+    IDC_CMD_EXIT_LabelTitle_RESID L"Exit" /* LabelTitle IDC_CMD_EXIT_LabelTitle_RESID: (null) */
+END
+
+IDC_CMD_EXIT_LargeImages_RESID    BITMAP    "res\\cmdButtonExitL.bmp" /* LargeImages IDC_CMD_EXIT_LargeImages_RESID: (null) */
+APPLICATION_RIBBON    UIFILE    "ribbon.bml"

@@ -1,0 +1,13 @@
+﻿生成启动时间为 11/20/15 9:08:35 AM。
+     1>项目“\\Mac\Home\Downloads\SummerPlot\SummerPlot\SummerPlot.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         '\\Mac\Home\Downloads\SummerPlot\SummerPlot'
+         用作为当前目录的以上路径启动了 CMD.EXE。
+         UNC 路径不受支持。默认值设为 Windows 目录。
+         Building ribbon...
+     1>UICC.exe : error P02: Source file 'ribbon.xml' can't be found.
+     1>已完成生成项目“\\Mac\Home\Downloads\SummerPlot\SummerPlot\SummerPlot.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.41

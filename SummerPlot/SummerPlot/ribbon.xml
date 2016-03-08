@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Application xmlns='http://schemas.microsoft.com/windows/2009/Ribbon'>
+  <Application.Commands>
+    
+    <Command Name="cmdTabHome" Symbol="IDC_CMD_TAB_HOME">
+      <Command.LabelTitle>
+        <String>Home</String>
+      </Command.LabelTitle>
+    </Command>
+    
+    <Command Name="cmdGroupExpression" LabelTitle="Expression" />
+    <Command Name="cmdGroupGrid" LabelTitle="Grid" />
+    <Command Name="cmdGroupAxis" LabelTitle="Axis" />
+    <Command Name="cmdGroupCanvas" LabelTitle="Canvas" />
+
+    <Command Name="cmdButtonAddExpression" Symbol="IDC_CMD_ADD_EXPRESSION">
+      <Command.LabelTitle>
+        <String>Add</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image>res/cmdButtonAddExpressionL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+    <Command Name="cmdButtonEditExpression" Symbol="IDC_CMD_EDIT_EXPRESSION">
+      <Command.LabelTitle>
+        <String>Edit</String>
+      </Command.LabelTitle>
+      <Command.SmallImages>
+        <Image>res/cmdButtonEditExpressionS.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonRemoveExpression" Symbol="IDC_CMD_REMOVE_EXPRESSION">
+      <Command.LabelTitle>
+        <String>Remove</String>
+      </Command.LabelTitle>
+      <Command.SmallImages>
+        <Image>res/cmdButtonRemoveExpresionS.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+    <Command Name="cmdButtonSetExpressionColor" Symbol="IDC_CMD_SET_EXPRESSION_COLOR">
+      <Command.LabelTitle>
+        <String>Color</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image>res/cmdButtonSetExpressionColorL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+
+    <Command Name="cmdCheckBoxShowGrid" Symbol="IDC_CMD_SHOW_GRID" LabelTitle="Enabled" />
+    <Command Name="cmdSpinnerGridSpacing" Symbol="IDC_CMD_GRID_SPACING">
+      <Command.SmallImages>
+        <Image>res/cmdSpinnerGridSpacingS.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdCheckBoxShowAxis" Symbol="IDC_CMD_SHOW_AXIS" LabelTitle="Enabled" />
+    <Command Name="cmdSpinnerTickSpacing" Symbol="IDC_CMD_TICK_SPACING">
+      <Command.SmallImages>
+        <Image>res/cmdSpinnerTickSpacingS.bmp</Image>
+      </Command.SmallImages>
+    </Command>
+
+    <Command Name="cmdButtonSetBackgroundColor" Symbol="IDC_CMD_SET_BACKGROUND_COLOR">
+      <Command.LabelTitle>
+        <String>Background</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image>res/cmdButtonSetExpressionColorL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+
+    <Command Name="cmdQat" />
+    <Command Name="cmdFileMenu" />
+
+    <Command Name="cmdButtonExport" Symbol="IDC_CMD_EXPORT">
+      <Command.LabelTitle>
+        <String>Export to image</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image>res/cmdButtonExportL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+
+    <Command Name="cmdButtonExit" Symbol="IDC_CMD_EXIT">
+      <Command.LabelTitle>
+        <String>Exit</String>
+      </Command.LabelTitle>
+      <Command.LargeImages>
+        <Image>res/cmdButtonExitL.bmp</Image>
+      </Command.LargeImages>
+    </Command>
+
+  </Application.Commands>
+  <Application.Views>
+    <Ribbon>
+      <Ribbon.ApplicationMenu>
+        <ApplicationMenu CommandName="cmdFileMenu">
+          <MenuGroup Class="MajorItems">
+            <Button CommandName="cmdButtonExport" />
+            <Button CommandName="cmdButtonExit" />
+          </MenuGroup>
+        </ApplicationMenu>
+      </Ribbon.ApplicationMenu>
+      <Ribbon.Tabs>
+        <Tab CommandName="cmdTabHome">
+          <Tab.ScalingPolicy>
+            <ScalingPolicy>
+              <ScalingPolicy.IdealSizes>
+                <Scale Group="cmdGroupExpression" Size="Large" />
+                <Scale Group="cmdGroupCanvas" Size="Large" />
+              </ScalingPolicy.IdealSizes>
+            </ScalingPolicy>
+          </Tab.ScalingPolicy>
+
+          <Group CommandName="cmdGroupExpression" >
+            <SizeDefinition>
+              <ControlNameMap>
+                <ControlNameDefinition Name="button1"/>
+                <ControlNameDefinition Name="button2"/>
+                <ControlNameDefinition Name="button3"/>
+                <ControlNameDefinition Name="button4"/>
+              </ControlNameMap>
+              <GroupSizeDefinition Size="Large">
+                <ControlSizeDefinition ControlName="button1" ImageSize="Large" IsLabelVisible="true" />
+                <Row>
+                  <ControlSizeDefinition ControlName="button2" ImageSize="Small" IsLabelVisible="true" />
+                </Row>
+                <Row>
+                  <ControlSizeDefinition ControlName="button3" ImageSize="Small" IsLabelVisible="true" />
+                </Row>
+                <ColumnBreak ShowSeparator="true"/>
+                <ControlSizeDefinition ControlName="button4" ImageSize="Large" IsLabelVisible="true" />
+              </GroupSizeDefinition>
+            </SizeDefinition>
+            <Button CommandName="cmdButtonAddExpression" />
+            <Button CommandName="cmdButtonEditExpression" />
+            <Button CommandName="cmdButtonRemoveExpression" />
+            <DropDownColorPicker CommandName="cmdButtonSetExpressionColor" ColorTemplate="ThemeColors" IsAutomaticColorButtonVisible="false" IsNoColorButtonVisible="false" />
+          </Group>
+
+          <Group CommandName="cmdGroupGrid">
+            <CheckBox CommandName="cmdCheckBoxShowGrid" />
+            <Spinner CommandName="cmdSpinnerGridSpacing" />
+          </Group>
+
+          <Group CommandName="cmdGroupAxis">
+            <CheckBox CommandName="cmdCheckBoxShowAxis" />
+            <Spinner CommandName="cmdSpinnerTickSpacing" />
+          </Group>
+
+          <Group CommandName="cmdGroupCanvas" SizeDefinition="OneButton">
+            <DropDownColorPicker CommandName="cmdButtonSetBackgroundColor" ColorTemplate="ThemeColors" IsAutomaticColorButtonVisible="false" IsNoColorButtonVisible="false" />
+          </Group>
+
+        </Tab>
+      </Ribbon.Tabs>
+      <Ribbon.QuickAccessToolbar>
+        <QuickAccessToolbar CommandName="cmdQat" />
+      </Ribbon.QuickAccessToolbar>
+    </Ribbon>
+  </Application.Views>
+</Application>
